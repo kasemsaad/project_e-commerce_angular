@@ -1,0 +1,28 @@
+<!-- <p>details works!</p> -->
+<div class=" w-100 py-5 " style="display: flex; justify-content: center; ">
+
+  <div  class=" container shadow pb-3 " >
+    <div class=" pt-3 webp" >
+      <!-- <div class="card " style="width: 18vw; border: none; "> -->
+        <img src="{{detailsItem.images[0]}}" class="card-img-top" alt="..." style="height: 35vw; width: vw; ">
+          <h2>{{detailsItem.title}}</h2>
+          <h4>Description: {{detailsItem.description}}</h4>
+          <p align="start" class="card-text">
+            discountPercentage:
+            {{ detailsItem.discountPercentage }}
+          </p>
+          <p align="start" class="card-text">
+            Rating:
+            <span class="text-warning">{{ detailsItem.rating }} <i class="fas fa-star"></i></span>
+          </p>
+          <p align="start" class="card-text">stock: {{detailsItem.stock}}</p>
+          <p align="start" class="card-text">price:<span class="text-danger"> {{detailsItem.price*41}}EGP</span></p>
+          <!-- <button class="btn btn-info">Details</button> -->
+          <button class="btn btn-outline-info me-2" (click)="back()">back</button>
+          <button class="btn btn-outline-info" (click)="addToCart(detailsItem)">Add to Cart <i class="fas fa-cart-shopping"></i> </button>
+      </div>
+    <!-- </div> -->
+
+  </div>
+
+</div>
